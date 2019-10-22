@@ -3,7 +3,13 @@
   "version": "0.1.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "repository": "git@github.com:elado/rollup-plugin-preserve-shebangs.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elado/rollup-plugin-preserve-shebangs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/elado/rollup-plugin-preserve-shebangs/issues"
+  },
   "author": "Elad Ossadon <elad@ossadon.com>",
   "license": "MIT",
   "scripts": {
