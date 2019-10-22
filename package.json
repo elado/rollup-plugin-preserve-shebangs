@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": "git@github.com:elado/rollup-plugin-preserve-shebangs.git",
-  "author": "Elad Ossadon <eossadon@lyft.com>",
+  "author": "Elad Ossadon <elad@ossadon.com>",
   "license": "MIT",
   "scripts": {
     "test": "jest"
