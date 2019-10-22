@@ -1,0 +1,22 @@
+{
+  "name": "rollup-plugin-preserve-shebangs",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "git@github.com:elado/rollup-plugin-preserve-shebangs.git",
+  "author": "Elad Ossadon <eossadon@lyft.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-typescript": "^7.6.0",
+    "@types/jest": "^24.0.19",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "rollup": "^1.25.1",
+    "tslib": "^1.10.0",
+    "typescript": "^3.6.4"
+  }
+}
