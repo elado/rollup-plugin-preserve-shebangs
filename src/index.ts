@@ -1,4 +1,5 @@
 import { Plugin } from 'rollup';
+import MagicString from 'magic-string';
 
 const SHEBANG_RX = /^#!.*/;
 
@@ -21,12 +22,19 @@ export const preserveShebangs = () => {
         map: null,
       };
     },
-    renderChunk(code, chunk) {
+    renderChunk(code, chunk, { sourcemap }) {
       if (chunk.facadeModuleId && shebangs[chunk.facadeModuleId]) {
-        code = [shebangs[chunk.facadeModuleId], code].join('\n');
+        const str = new MagicString(code);
+        str.prepend(shebangs[chunk.facadeModuleId] + '\n');
+        return {
+          code: str.toString(),
+          map: sourcemap ? str.generateMap({ hires: true }) : null,
+        };
       }
-
-      return { code };
+      return {
+        code,
+        map: null,
+      };
     },
   };
 
