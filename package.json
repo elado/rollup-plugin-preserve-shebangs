@@ -29,5 +29,8 @@
     "rollup": "^1.25.1",
     "tslib": "^1.10.0",
     "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "magic-string": "^0.25.7"
   }
 }
