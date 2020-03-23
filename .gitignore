@@ -5,3 +5,4 @@ yarn-error.log*
 node_modules
 *.tgz
 dist
+src/__tests__/__out
