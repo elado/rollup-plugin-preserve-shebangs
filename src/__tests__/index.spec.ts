@@ -3,8 +3,7 @@ import { rollup, RollupWarning } from 'rollup';
 
 import { preserveShebangs } from '..';
 
-type WarningParam = string | RollupWarning // Rollup@1
-// type WarningParam = RollupWarning // Rollup@2
+type WarningParam = RollupWarning
 
 const getWarningCode = (warning: WarningParam) =>
   typeof warning === 'string' ? warning : warning.code;
